@@ -1,4 +1,4 @@
-# Sab se pehly person class or usme 1 constructor jo name age email set kery ga or name hum private rekhy gy 
+# Sab se pehly person class or usme 1 constructor jo name age email set kery ga or name, age, email hum private rekhy gy 
 
 class Person:
     def __init__(self, name, age, email):
@@ -48,6 +48,8 @@ class Admin(Person):
     def display(self):
         super().display()
         print(f"Admin ID: {self.admin_id}")
+
+    
 
 
 class Teacher(Person):
@@ -99,3 +101,17 @@ class Student(Person):
         print(f"CGPA: {self.__cgpa}")
         print(f"Present: {self.attendance['Present']}")
         print(f"Absent: {self.attendance['Absent']}")
+
+
+class Course:
+    def __init__(self, course_id, course_name, credit_hours):
+        self.course_id = course_id
+        self.course_name = course_name
+        self.credit_hours = credit_hours
+        self.teacher = None
+        self.students = {}
+
+    def display(self):
+        print(f"Course ID: {self.course_id}")
+        print(f"Course Name: {self.course_name}")
+        print(f"Credit Hours: {self.credit_hours}")

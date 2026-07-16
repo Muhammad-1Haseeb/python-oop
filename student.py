@@ -149,35 +149,55 @@
 
 
 
-class Student:
-    def __init__(self, name, cgpa):
+# class Student:
+#     def __init__(self, name, cgpa):
+#         self.name = name
+#         self.cgpa = cgpa
+
+#     def display(self):
+#         print(f"Name: {self.name}")
+#         print(f"CGPA: {self.cgpa}")
+
+# ali = Student("Ali", 3.6)
+# ahmed = Student("Ahmed", 3.4)
+
+# students = {
+#     101: ali,
+#     102: ahmed
+# }
+
+# print("University Records")
+# students[101].display()
+# students[102].display()
+
+
+# student = students[102]
+# student.cgpa = 3.99
+
+# print("After Updating")
+
+# print("student variable:")
+# student.display()
+
+# print("ahmed variable:")
+# ahmed.display() 
+
+
+class Pokemon:
+    def __init__(self, pokemon_id, name):
+        self.pokemon_id = pokemon_id
         self.name = name
-        self.cgpa = cgpa
 
     def display(self):
-        print(f"Name: {self.name}")
-        print(f"CGPA: {self.cgpa}")
+        print(f"Pokemon ID: {self.pokemon_id}")
+        print(f"Pokemon Name: {self.name}")
 
-ali = Student("Ali", 3.6)
-ahmed = Student("Ahmed", 3.4)
-
-students = {
-    101: ali,
-    102: ahmed
-}
-
-print("University Records")
-students[101].display()
-students[102].display()
+class Trainer:
+    def __init__(self, name):
+        self.name = name
+        self.pokemons = {}
 
 
-student = students[102]
-student.cgpa = 3.99
+pikachu = Pokemon(1, "Pikachu")
 
-print("After Updating")
-
-print("student variable:")
-student.display()
-
-print("ahmed variable:")
-ahmed.display()
+ash = Trainer("Ash")
