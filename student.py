@@ -183,21 +183,27 @@
 # ahmed.display() 
 
 
-class Pokemon:
-    def __init__(self, pokemon_id, name):
-        self.pokemon_id = pokemon_id
-        self.name = name
+# class Pokemon:
+#     def __init__(self, pokemon_id, name):
+#         self.pokemon_id = pokemon_id
+#         self.name = name
 
-    def display(self):
-        print(f"Pokemon ID: {self.pokemon_id}")
-        print(f"Pokemon Name: {self.name}")
+#     def display(self):
+#         print(f"Pokemon ID: {self.pokemon_id}")
+#         print(f"Pokemon Name: {self.name}")
 
-class Trainer:
-    def __init__(self, name):
-        self.name = name
-        self.pokemons = {}
+# class Trainer:
+#     def __init__(self, name):
+#         self.name = name
+#         self.pokemons = {}
+
+#     def catch_pokemon(self, pokemon): 
+#         print(pokemon.name)
+#         print(pokemon.pokemon_id)
+#         self.pokemons[pokemon.pokemon_id] = pokemon #1. is line me self.pokemons dictionary ko point kery ga 2. [pokemon.pokemon_id]is me pokemon = pikachu hai to isky paas dono id or name hain lakin humny likha hua hai .pokemon_id to hum 1 mil jaye ga to yeh line bn jaye gi self.pokemons[1] = pikachu
 
 
-pikachu = Pokemon(1, "Pikachu")
+# pikachu = Pokemon(1, "Pikachu")
 
-ash = Trainer("Ash")
+# ash = Trainer("Ash")
+# ash.catch_pokemon(pikachu)
